@@ -1,0 +1,16 @@
+{
+    "name": "Chameleon Bookmark Management",
+    "description": "Simple bookmark manager by chameleon",
+    "permissions": ["bookmarks", "tabs", "storage"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "icons": {
+        "16": "favicon-16x16.png",
+        "48": "favicon-48x48.png",
+        "128": "favicon-150x150.png"
+    }
+  }
+  

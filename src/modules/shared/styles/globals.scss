@@ -1,0 +1,145 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.form-actions {
+  text-align: right;
+}
+
+.ant-steps-item-title {
+  font-size: 0.8rem;
+}
+
+#nprogress .bar {
+  background: #f99b17;
+  height: 3px;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #f99b17;
+  border-left-color: #f99b17;
+}
+
+.top-bar__notifications .ant-menu-vertical {
+  background-color: #fff !important;
+}
+
+.centered-data {
+  text-align: center;
+  display: block;
+}
+
+.right-aligned {
+  float: right;
+}
+
+.management_list .management_list,
+.management_list .ant-layout-has-sider,
+.management_list .ant-layout-footer,
+.management_list .ant-layout-content {
+  background: #ffffff;
+}
+
+.ant-modal-body {
+  background-color: #fafafa;
+}
+
+
+
+
+.ant-tooltip-inner {
+  padding: 13px;
+  background-color: #414141;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 14px;
+  filter: drop-shadow(0px 2px 4px rgba(97, 97, 97, 0.18)) drop-shadow(0px 4px 8px rgba(97, 97, 97, 0.18));
+}
+
+.ant-tooltip-arrow-content {
+  clip-path: polygon(50% 0, 50% 100%, 100% 0);
+  transform: rotate(0deg) !important;
+  margin-top: -1px;
+  width: 24px;
+  height: 12px;
+  display: block;
+}
+
+.ant-tooltip-arrow {
+  width: 24px;
+}
+
+.ant-form {
+  label {
+    color: #666;
+    font-size: 13px;
+  }
+}
+
+.ant-select-selection-overflow-item {
+  margin-top: 7px;
+  margin-bottom: 2px;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector{
+  border-radius: 4px;
+}
+
+.ant-form-item-has-error{
+  input, textarea, .ant-select-selector{
+    border-color: #e9e9e9 !important;
+  }
+}
+
+.ant-form-item-has-error .ant-select:not(.ant-select-disabled):not(.ant-select-customize-input) .ant-select-selector{
+  border-color: #e9e9e9 !important;
+}
+
+.ant-select-selection-search{
+  display: flex;
+  align-items: center;
+}
+
+.top-inner-page-header{
+  padding: 0;
+}
+
+.tree-select-search-dropdown{
+  .ant-select-tree-treenode{
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .ant-select-tree-checkbox {
+    position: absolute !important;
+    right: 0 !important;
+  }
+
+  .ant-select-tree-treenode-checkbox-checked{
+    background-color: #FEFCF8;
+    color: #F99B17;
+  }
+
+  .ant-select-tree-checkbox-inner{
+    border-radius: 4px;
+  }
+
+  .ant-select-tree-title{
+    font-weight: bold;
+  }
+}
+
+.reset-styles {
+  all: unset !important;
+}
