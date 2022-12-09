@@ -1,16 +1,21 @@
 {
     "name": "Chameleon Bookmark Management",
     "description": "Simple bookmark manager by chameleon",
-    "permissions": ["bookmarks", "tabs", "storage"],
-    "action": {
-      "default_popup": "popup.html"
-    },
-    "version": "1.0.0",
+    "permissions": ["bookmarks", "tabs", "storage", "identity", "identity.email"],
+    "action": {},
+    "version": "1.1.0",
     "manifest_version": 3,
     "icons": {
-        "16": "favicon-16x16.png",
-        "48": "favicon-48x48.png",
-        "128": "favicon-150x150.png"
-    }
+      "16": "icons/logo_16.png",
+      "32": "icons/logo_32.png",
+      "64": "icons/logo_64.png",
+      "128": "icons/logo_128.png",
+      "256": "icons/logo_256.png"
+    },
+    "options_page": "options.html",
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
   }
+}
   

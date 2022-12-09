@@ -10,7 +10,8 @@ module.exports = {
   mode: "development",
   devtool: "cheap-module-source-map",
   entry: {
-    popup: path.resolve("./src/popup/popup.tsx"),
+    background: path.resolve("./src/background.ts"),
+    options: path.resolve("./src/options/options.tsx"),
   },
   module: {
     rules: [
@@ -60,28 +61,24 @@ module.exports = {
       patterns: [
         { from: path.resolve("src/manifest.json"), to: path.resolve("dist") },
         {
-          from: path.resolve("src/favicons/favicon-16x16.png"),
-          to: path.resolve("dist"),
+          from: path.resolve("src/icons/"),
+          to: path.resolve("dist/icons/"),
         },
         {
-          from: path.resolve("src/favicons/favicon-48x48.png"),
-          to: path.resolve("dist"),
+          from: path.resolve("src/scripts/axios.min.js"),
+          to: path.resolve("dist/src/scripts/axios.min.js"),
         },
         {
-          from: path.resolve("src/favicons/favicon-150x150.png"),
-          to: path.resolve("dist"),
+          from: path.resolve("src/scripts/lodash.min.js"),
+          to: path.resolve("dist/src/scripts/lodash.min.js"),
         },
         {
-          from: path.resolve("src/images/chameleon-logo-withtext.png"),
-          to: path.resolve("dist/images/chameleon-logo-withtext.png"),
+          from: path.resolve("src/scripts/moment.min.js"),
+          to: path.resolve("dist/src/scripts/moment.min.js"),
         },
       ],
     }),
-    new HtmlPlugin({
-      title: "Chameleon Bookmarks",
-      filename: "popup.html",
-      chunks: ["popup"],
-    }),
+    ...getHtmlPlugins(["options"]),
     new webpack.DefinePlugin({
       "process.env": JSON.stringify(process.env),
     }),
@@ -93,3 +90,14 @@ module.exports = {
     filename: "[name].js",
   },
 };
+
+function getHtmlPlugins(chunks) {
+  return chunks.map(
+    (chunk) =>
+      new HtmlPlugin({
+        title: "Chameleon Extension",
+        filename: `${chunk}.html`,
+        chunks: [chunk],
+      })
+  );
+}

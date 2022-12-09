@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+
+html, body{ margin: 0; padding: 0; }
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+.chameleon__signature__workarea__preloader{
+    font-size: 60px;
+    width: 60px;
+    height: 60px;
+    margin: 100px auto;
+}
+
+.chameleon___rotating__animation {
+    animation: rotating 2s linear infinite;
+}
+
+/* HEADER START */
+.chameleon___email__signature__header{
+    color: #515151;
+    font-family: 'Merriweather', serif;
+    font-size: 23px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    background: #f8f8f8;
+    height: 100px;
+    padding: 20px 20%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+/* HEADER END */
+
+/* WORK AREA START */
+.chameleon__signature__workarea{
+    box-sizing: border-box;
+    padding: 0 20%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+
+.chameleon__h4__title{
+    color: #515151;
+    font-family: 'Merriweather', serif;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    margin-top: 20px;
+}
+.chameleon__width__full{
+    width: 100%;
+}
+
+.chameleon__signature__config{
+    margin-right: 20px;
+    min-width: 420px;
+}
+
+.chameleon__signature__config, .chameleon__signature__preview{
+    width: calc(50% - 10px);
+    border: 0 solid #ccc;
+    box-sizing: border-box;
+    /*overflow: hidden;*/
+}
+
+#chameleon__email__signature__config__form{
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 30px;
+}
+
+.chameleon__email__signature__config__form__mobile,
+.chameleon__email__signature__config__form__office_phone,
+.chameleon__email__signature__config__form__extension,
+.chameleon__email__signature__config__form__direct_line,
+.chameleon__email__signature__config__form__categories,
+.chameleon__email__signature__config__form__additional_info,
+.chameleon__email__signature__config__form__name,
+.chameleon__email__signature__config__form__title
+{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: calc(50% - 10px);
+    align-content: flex-start
+}
+
+.chameleon__email__signature__config__form__mobile,
+.chameleon__email__signature__config__form__extension,
+.chameleon__email__signature__config__form__categories,
+.chameleon__email__signature__config__form__name
+{
+    margin-right: 20px;
+}
+
+
+.chameleon__email__signature__config__form__mobile__title,
+.chameleon__email__signature__config__form__office_phone__title,
+.chameleon__email__signature__config__form__extension__title,
+.chameleon__email__signature__config__form__direct_line__title,
+.chameleon__email__signature__config__form__categories__title,
+.chameleon__email__signature__config__form__additional_info__title,
+.chameleon__email__signature__config__form__name__title,
+.chameleon__email__signature__config__form__title__title
+{
+    font-family: 'Merriweather', serif;
+    font-size: 11px;
+    color: #292929;
+    letter-spacing: 1px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#chameleon__email__signature__config__form__mobile__checkbox,
+#chameleon__email__signature__config__form__office_phone__checkbox,
+#chameleon__email__signature__config__form__extension__checkbox,
+#chameleon__email__signature__config__form__direct_line__checkbox,
+#chameleon__email__signature__config__form__categories__checkbox,
+#chameleon__email__signature__config__form__additional_info__checkbox,
+#chameleon__email__signature__config__form__name__checkbox,
+#chameleon__email__signature__config__form__title__checkbox
+{
+    margin: 0;
+}
+
+.chameleon__email__signature__config__form__categories__select{
+    border: 0 solid;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.chameleon__email__signature__config__form__mobile__input,
+.chameleon__email__signature__config__form__office_phone__input,
+.chameleon__email__signature__config__form__extension__input,
+.chameleon__email__signature__config__form__direct_line__input,
+.chameleon__email__signature__config__form__categories__select,
+.chameleon__email__signature__config__form__additional_info__textarea,
+.chameleon__email__signature__config__form__name__input,
+.chameleon__email__signature__config__form__title__input
+{
+    width: 100%;
+}
+
+#chameleon__email__signature__config__form__mobile__input,
+#chameleon__email__signature__config__form__office_phone__input,
+#chameleon__email__signature__config__form__extension__input,
+#chameleon__email__signature__config__form__direct_line__input,
+#chameleon__email__signature__config__form__name__input,
+#chameleon__email__signature__config__form__title__input
+{
+    box-sizing: border-box;
+    background: #f5f5f5;
+    border: none;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 24px;
+    border-radius: 0;
+    outline: none;
+    display: block;
+    color: #555;
+    background-image: none;
+    font-size: 11px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#chameleon__email__signature__config__form__mobile__input:focus,
+#chameleon__email__signature__config__form__office_phone__input:focus,
+#chameleon__email__signature__config__form__extension__input:focus,
+#chameleon__email__signature__config__form__direct_line__input:focus,
+#chameleon__email__signature__config__form__name__input:focus,
+#chameleon__email__signature__config__form__title__input:focus
+{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);
+}
+
+#chameleon__email__signature__config__form__additional_info__textarea{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 40px;
+    border: 1px solid #ccc;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+    outline: none;
+    display: block;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    margin:0!important;
+}
+
+
+
+.chameleon__save__signature__config{
+    display: none!important;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20%;
+}
+#chameleon__save__signature__config{
+
+    outline: 0;
+    box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+    height: 50px;
+    border: none;
+    background: #f78d1e;
+    color: #ffffff;
+    width: 50%;
+    font-size: 11px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    line-height: 1.2;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.chameleon__signature__preview{
+    border: 0 solid;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+
+/* WORK AREA END */
+
+
+/* SELECT2 START */
+.select2.select2-container.select2-container{
+    width: 100%!important;
+}
+
+.select2-selection.select2-selection--multiple{
+    border: 1px solid #ccc!important;
+    border-radius: 0!important;
+}
+
+.select2-selection__choice{
+    background-color: #f5f5f5!important;
+    border: 1px solid #ccc!important;
+    border-radius: 0!important;
+    margin-left: 5px!important;
+    margin-top: 5px!important;
+    padding: 0!important;
+    box-sizing: border-box!important;
+    display: flex!important;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 22px!important;
+}
+
+.select2-selection__choice__remove{
+    background-color: transparent;
+    border: none;
+    border-right: 1px solid #ccc!important;
+    color: #999;
+    border-radius: 0!important;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0 6px!important;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 1px!important;
+    height: 100%!important;
+}
+
+
+.select2-selection__rendered{
+    display: flex!important;
+    flex-flow: row wrap!important;
+    margin: 0!important;
+    /*margin-left: 20px!important;*/
+}
+
+.select2-search__field::-webkit-input-placeholder{
+    font-size: 11px;
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+
+
+.select2-results__option.select2-results__option--selectable.select2-results__option--selected.select2-results__option--highlighted,
+.select2-results__option.select2-results__option--selectable.select2-results__option--highlighted
+{
+    background-color: #f78d1e!important;
+}
+
+
+
+.select2-selection.select2-selection--multiple{
+    min-height: initial!important;
+}
+
+.select2-container{
+    box-sizing: border-box;
+    display: block!important;
+}
