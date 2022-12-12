@@ -2,9 +2,11 @@ import _ from "./scripts/lodash.min.js";
 import moment from "./scripts/moment.min.js";
 
 // Prod token
-const hasura_api_token = process.env.HASURA_API_TOKEN;
+const hasura_api_token =
+  "ph_2Crj@_BhAXNH2RTjtEafQ-WNR-CDc.83Tj!wEUkintXmWXxYWT3-aBWgN7i8zazxaX_LPtteHZ*gcfJyy2X7@XWC9FEKJhHG@";
 
-const baseUrl = process.env.BASE_URL;
+const baseUrl =
+  "https://collectiveos-hasura-rndfinance.collective-os.com/api/rest";
 
 // Set badge status
 const setBadgeStatus = (status: string = "failure") => {
