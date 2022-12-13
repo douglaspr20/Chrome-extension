@@ -1,2 +1,2 @@
 # Chrome-extension
-Chjrome extension make with react and Webpack
+Chrome extension make with react and Webpack
